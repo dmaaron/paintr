@@ -1,0 +1,30 @@
+.paint-dot {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	float:left;
+}
+#canvas
+{
+  margin-top: 25px;
+  width: 800px;
+  height: 600px;
+  border: 3px double black;
+  background-size: cover;
+}
+
+.swatch {
+	height:40px;
+	width:40px;
+	border:1px dashed black;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	display: inline-block;
+}
+
+#image-input {
+	width:215px;
+}
+
+
