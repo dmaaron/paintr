@@ -3,22 +3,25 @@ var clicked = false;
 
 function add_color() {
 	var color_choice = $('#color-input').val();
-	var new_swatch = $('<div>');
-	new_swatch.addClass('swatch');
-	new_swatch.css('background-color', color_choice);
-	$('#palette').append(new_swatch);
-	$('#color-input').val('');
+		if(color_choice !== ''){
+			var new_swatch = $('<div>');
+			new_swatch.addClass('swatch');
+			new_swatch.css('background-color', color_choice);
+			$('#palette').append(new_swatch);
+			$('#color-input').val('');
+	}
 }
 // adds an image to the image palette
 
 function add_image() {
-	console.log('add image');
 	var image_choice = $('#image-input').val();
-	var new_image = $('<img>');
-	new_image.addClass('swatch');
-	new_image.attr('src', image_choice);
-	$('#image-palette').append(new_image);
-	$('#image-input').val('');
+		if(image_choice !== ''){
+			var new_image = $('<img>');
+			new_image.addClass('swatch');
+			new_image.attr('src', image_choice);
+			$('#image-palette').append(new_image);
+			$('#image-input').val('');
+	}
 }
 // sets an image to the canvas 
 
